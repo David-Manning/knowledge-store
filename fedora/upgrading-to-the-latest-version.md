@@ -12,7 +12,7 @@ I usually refresh after installing everything just to be on the safe side. It ha
 
 ```bash
 sudo dnf upgrade --refresh -y
-sudo dnf upgrade --refresh
+sudo dnf upgrade --refresh -y
 shutdown 0 -r
 ```
 
