@@ -8,11 +8,10 @@ Reboot - not strictly necessary but I do it to be safe.
 
 ### Step 2
 Update your packages, refresh your dnf system and reboot (warning: the last line will automatically and instantly reboot your PC). 
-I usually refresh after installing everything just to be on the safe side. It has never found anything the second time, but it only takes a couple of seconds to run and it's best to be sure.
+I usually refresh after installing everything just to be on the safe side. It has never found anything the second time (nor should it), but it only takes a couple of seconds to run and I like to be doubly sure.
 
 ```bash
-sudo dnf upgrade --refresh
-sudo dnf upgrade -y
+sudo dnf upgrade --refresh -y
 sudo dnf upgrade --refresh
 shutdown 0 -r
 ```
