@@ -34,17 +34,9 @@ sudo dnf system-upgrade reboot
 Anything after this step is optional.
 
 ## Step 5
-Update system config files.
-
-```bash
-sudo dnf install rpmconf
-sudo rpmconf -a
-```
-
-## Step 6
 We should clean up the packages. Some packages are retired at each version, but won't be removed. These packages won't receive any updates but will still be on your system. You can also remove any packages which are duplicated or not in use.
 ```bash
-sudo dnf install remove-retired-packages
+sudo dnf install remove-retired-packages -y
 remove-retired-packages
 sudo dnf remove --duplicates
 sudo dnf autoremove
